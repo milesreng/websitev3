@@ -1,0 +1,5 @@
+rifle green: lime-800 lime-900
+navy blue: sky-900 sky-950 cyan-950
+beige: amber-100
+dark grey: stone-900
+frost grey: zinc-400
