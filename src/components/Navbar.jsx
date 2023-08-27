@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import { ReactComponent as Linkedin } from '../assets/linkedin.svg'
 import { ReactComponent as Github } from '../assets/github.svg'
+import { Resume } from '../assets/Resume_Miles_Eng.pdf'
 
 class Navbar extends Component {
     render() {
@@ -26,7 +27,7 @@ class Navbar extends Component {
                         <div className="border-solid border-white border-2 my-8 px-auto pb-1 pt-2 bg-beige
                                         hover:bg-white cursor-pointer text-navy uppercase text-center">
                             <object data="../assets/Resume_Miles_Eng.pdf" type="application/pdf">
-                                <a href="" target="_blank">
+                                <a href={ Resume } target="_blank">
                                     <p className="">Resume</p>
                                 </a>
                             </object>

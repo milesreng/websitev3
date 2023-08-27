@@ -3,62 +3,42 @@ import React, { Component } from 'react'
 class Contact extends Component {
     render() {
         return (
-            <div className="w-2/3 mx-auto">
-                <h1 className="text-5xl uppercase text-white mt-4">Contact Me</h1>
-                <div className="mt-4 border-2 border-white text-white">
+            <div className="w-5/6 mx-auto">
+                <h1 className="text-3xl md:text-5xl uppercase text-white mt-4 md:mt-8">Contact Me</h1>
+                <div className="w-11/12 mt-4 border-2 border-white text-white  bg-beige bg-opacity-20 mr-12">
                     <div className="w-5/6 mx-auto py-8">
                         <form method="post"
                               action="https://public.herotofu.com/v1/acdc8260-4276-11ed-9b17-6fdf7f94f506" 
-                              className="w-full">
-                            <div className="md:flex md:items-center mb-6">
-                                <div className="md:flex md:items-center mb-6 md:w-1/2">
-                                    <div className="md:w-1/3">
-                                        <label htmlFor="name" className="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4">
+                              className="w-full flex flex-col gap-8">
+                            <div className="flex flex-col lg:flex-row gap-4 lg:justify-between w-full">
+                                <div className="w-full lg:flex lg:w-5/12">
+                                    <div className="w-11/12 lg:w-full block md:flex md:flex-row items-center gap-2 mx-auto justify-between">
+                                        <label htmlFor="name" className="text-white md:w-1/4 lg:w-1/6 hidden md:flex">
                                             Name
                                         </label>
-                                    </div>
-                                    <div className="md:w-2/3">
-                                        <input type="text" id="name" placeholder="" className="bg-navy text-white appearance-none border-2 border-white rounded w-full py-2 px-4" />
+                                        <input type="text" id="name" placeholder="Your Name" className="text-white appearance-none border-2 w-full md:w-2/3 lg:w-3/4 border-white rounded py-2 px-4 focus:ring-navy focus:border-navy" required />
                                     </div>
                                 </div>
-                                <div className="md:flex md:items-center mb-6 md:w-1/2">
-                                    <div className="md:w-1/3">
-                                        <label htmlFor="email" className="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4">
+                                <div className="w-full lg:flex lg:w-5/12">
+                                    <div className="w-11/12 lg:w-full block md:flex md:flex-row justify-between items-center gap-2 mx-auto">
+                                        <label htmlFor="email" className="text-white hidden md:w-1/4 lg:w-1/6 md:flex">
                                             Email
                                         </label>
-                                    </div>
-                                    <div className="md:w-2/3">
-                                        <input type="text" id="email" placeholder="name@example.com" className="bg-navy text-white appearance-none border-2 border-white rounded w-full py-2 px-4" />
+                                        <input type="text" id="email" placeholder="name@example.com" className="text-white appearance-none border-2 border-white rounded w-full md:w-2/3 lg:w-3/4 py-2 px-4 focus:ring-navy focus:border-navy" required />
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                            <div className="flex-col flex-wrap -mx-3 mb-6">
-                                <div className="px-3">
-                                    <label htmlFor="message" className="block text-white font-bold md:text-right mb-1 md:mb-0 pr-4">
+                            <div className="flex-col flex-wrap w-11/12 lg:w-full mx-auto ">
+                                <div className="">
+                                    <label htmlFor="message" className="block text-white pb-2">
                                         Message
                                     </label>
                                 </div>
                                 <div className="md:w-full">
-                                    <input type="textarea" id="message" className="block bg-navy text-white appearance-none border-2 border-white rounded w-full py-2 px-4" />
+                                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your message here..." className="block text-white appearance-none border-2 border-white rounded w-full py-2 px-4 h-32 focus:ring-navy focus:border-navy" ></textarea>
                                 </div>
                             </div>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                    <div className="">
-                        <form method="post" action="https://public.herotofu.com/v1/acdc8260-4276-11ed-9b17-6fdf7f94f506">
-                            <div className="mb-3 input-group">
-                                <span class="input-group-text form-label form-firstline" id="basic-addon1">Name</span>
-                                <input className="col-sm-2 form-control form-firstline" type="text" name="name" required></input>
-                                <span class="input-group-text form-label form-firstline" id="basic-addon1" >Email</span>
-                                <input className="col-sm-4 form-control form-firstline" type="email" name="email" placeholder="firstlast@example.com" required></input>
-                            </div>
-                            <div className="mb-3 input-group">
-                                <textarea className="col-sm-6 mt-4 contact-message form-control" name="message" placeholder="Your message..." required></textarea>
-                            </div>
-                            <button id="btn-submit-form" type="submit">Submit</button>
+                            <button type="submit" className="border-2 border-beige w-1/2 md:w-1/4 lg:w-1/6 text-md lg:text-xl mx-auto py-1 hover:bg-beige transition duration-200">Submit</button>
                         </form>
                     </div>
                 </div>

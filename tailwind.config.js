@@ -11,6 +11,7 @@ export default {
       navy: '#282D3C',
       beige: '#D6C69A',
       bluegray: '#b1c1c7',
+      red: '#f2d0c2',
       white: '#FFFFFF'
     },
     extend: {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Course from '../components/Course'
-import { ReactComponent as Database } from '../assets/database.png' 
 
 class Coursework extends Component {
     render() {
@@ -11,7 +10,7 @@ class Coursework extends Component {
                     <p className="text-lg">GPA: 3.95/4.0</p>
                     <p className="text-md">B.S. Computer Science, A.B.2 Global Health</p>
                 </div>
-                <div className="flex flex-wrap w-5/6 justify-between">
+                <div className="flex flex-col">
                     <Course title="CS316" desc="Topics include data modeling, database design theory, 
                         data definition and manipulation languages (SQL and NoSQL), database application 
                         programming interfaces, storage and indexing, query processing and optimization, 
