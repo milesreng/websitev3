@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import { ReactComponent as Linkedin } from '../assets/linkedin.svg'
 import { ReactComponent as Github } from '../assets/github.svg'
-import { Resume } from '../assets/Resume_Miles_Eng.pdf'
+import Resume from '../assets/Resume_Miles_Eng.pdf'
 
 class Navbar extends Component {
     render() {
         return (
-            <div className="w-full flex flex-row justify-between">
-                <div className="flex flex-col fixed top-0 left-0 h-screen m-0 py-8 px-10 shadow justify-between border-r-2 border-beige">
-                    <div className="flex flex-col gap-6 text-white uppercase text-center">
+            <div className="w-full flex flex-col md:flex-row h-full">
+                <div className="flex flex-row md:flex-col md:fixed top-0 left-0 md:h-screen md:w-1/4 lg:w-1/6 w-full m-0 py-4 md:py-8 px-4 md:px-10 shadow justify-between border-b-2 md:border-r-2 md:border-b-0 border-beige">
+                    <div className="flex flex-col gap-2 md:gap-6 text-white uppercase text-center">
                         <Link to="/">
                             <p className="hover:text-beige">Home</p>
                         </Link>
@@ -23,15 +23,13 @@ class Navbar extends Component {
                             <p className="hover:text-beige">Contact</p>
                         </Link>
                     </div>
-                    <div className="flex-col">
-                        <div className="border-solid border-white border-2 my-8 px-auto pb-1 pt-2 bg-beige
+                    <div className="flex flex-col justify-around">
+                        <div className="border-solid border-white border-2  md:my-8 px-auto pb-1 pt-2 px-2 bg-beige
                                         hover:bg-white cursor-pointer text-navy uppercase text-center">
-                            <object data="../assets/Resume_Miles_Eng.pdf" type="application/pdf">
-                                <a href={ Resume } target="_blank">
-                                    <p className="">Resume</p>
-                                </a>
-                            </object>
-                            
+                            {/* <Link to="/resume">
+                                <p>Resume</p>
+                            </Link> */}
+                            <a href={Resume} target="_blank">Resume</a>
                         </div>
                         <div className="flex fill-white  justify-around">
                         
@@ -45,7 +43,7 @@ class Navbar extends Component {
                     </div>
                     
                 </div>
-                <div className="pl-64 w-full pt-12">
+                <div className="md:pl-64 lg:pl-80 lg:pr-8 w-full pt-8 pl-8 text-center md:text-left">
                     <Outlet />
                 </div>
             </div>
