@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import { ReactComponent as Linkedin } from '../assets/linkedin.svg'
 import { ReactComponent as Github } from '../assets/github.svg'
-import Resume from '../assets/Resume_Miles_Eng.pdf'
+import Resume from '../assets/Miles_Eng_resume.pdf'
 
 class Navbar extends Component {
     render() {
