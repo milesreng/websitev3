@@ -4,9 +4,9 @@ html, body {
   }
   
   body {
-      background: linear-gradient(-45deg, #282D3C, #405e6b, #385440, #5f7375);
-      background-size: 400% 400%;
-      animation: gradient 8s ease infinite;
+      background: linear-gradient(-45deg, #7A989B, #a9c7c9, #98b6b8, #c8e1e3);
+      background-size: 400% 600%;
+      animation: gradient 4s ease infinite;
   }
   
   @keyframes gradient {

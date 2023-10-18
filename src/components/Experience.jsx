@@ -4,16 +4,16 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export default function Experience(props) {
     return (
-        <div className="text-white">
+        <div className="text-gunmetal">
             <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(175, 196, 227)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(175, 196, 227)' }}
+                        contentStyle={{ background: 'rgb(47, 50, 58)', color: '#2F323A' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(47, 50, 58)' }}
                         date="August 2023"
-                        iconStyle={{ background: 'rgb(175, 196, 227)', color: '#fff' }}
+                        iconStyle={{ background: 'rgb(47, 50, 58)', color: '#2F323A' }}
                     >
-                    <div className="text-navy">
+                    <div className="text-gunmetal-50">
                         <h3 className="vertical-timeline-element-title">Bass Connections Fellow</h3>
                         <h4 className="vertical-timeline-element-subtitle">Durham, NC</h4>
                         <p> This semester, I've had the privilege to join a groundbreaking research project 
@@ -36,10 +36,10 @@ export default function Experience(props) {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="May - August 2023"
-                    contentStyle={{ background: 'rgb(214, 198, 154)'}}
-                    iconStyle={{ background: 'rgb(214, 198, 154)', color: '#fff' }}
+                    contentStyle={{ background: 'rgb(194, 199, 209)'}}
+                    iconStyle={{ background: 'rgb(194, 199, 209)', color: '#2F323A' }}
                 >
-                     <div className="text-navy">
+                     <div className="text-gunmetal">
                         <h3 className="vertical-timeline-element-title">IT Analyst Intern</h3>
                         <h4 className="vertical-timeline-element-subtitle">Chicago, IL</h4>
                         <p>
@@ -56,11 +56,23 @@ export default function Experience(props) {
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    className=""
+                    date=""
+                    contentStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(47, 50, 58)' }}
+                    iconStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}
+                    >
+                    <div className="text-gunmetal-50">
+                        <h3 className="vertical-timeline-element-title">First React.js Website</h3>
+                        <p>In [date], I created my first React.js portfolio </p>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(175, 196, 227)', color: '#fff' }}
+                    contentStyle={{ background: 'rgb(194, 199, 209)', color: '#2F323A' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(175, 196, 227)' }}
+                    iconStyle={{ background: 'rgb(194, 199, 209)', color: '#2F323A' }}
                     date="August 2023"
-                    iconStyle={{ background: 'rgb(175, 196, 227)', color: '#fff' }}
                 >
                      <div className="text-navy">
                         <h3 className="vertical-timeline-element-title">Undergraduate Teaching Assistant</h3>
@@ -88,10 +100,10 @@ export default function Experience(props) {
                 <VerticalTimelineElement    
                     className="vertical-timeline-element--work"
                     date="August 2021 - present"
-                    contentStyle={{ background: 'rgb(214, 198, 154)'}}
-                    iconStyle={{ background: 'rgb(214, 198, 154)', color: '#fff' }}
+                    contentStyle={{ background: 'rgb(47, 50, 58)'}}
+                    iconStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}
                 >
-                     <div className="text-navy">
+                     <div className="text-gunmetal-50">
                         <h3 className="vertical-timeline-element-title">B.S. Computer Science at Duke University</h3>
                         <h4 className="vertical-timeline-element-subtitle">Durham, NC</h4>
                         {/* <p>
@@ -114,7 +126,7 @@ export default function Experience(props) {
                     </div>
                 </VerticalTimelineElement> */}
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(83, 128, 83)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(47, 71, 74)', color: '#fff' }}
                 />
             </VerticalTimeline>
         </div>
