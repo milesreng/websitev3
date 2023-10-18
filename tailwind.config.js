@@ -3,8 +3,9 @@ import colors from 'tailwindcss/colors'
 
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     colors: {
@@ -71,14 +72,15 @@ export default {
       'merino': {
         DEFAULT: '#f5ece5'
       },
+      red: colors.red,
       slate: colors.slate,
       gray: colors.gray,
       black: colors.black
     },
     extend: {
       fontFamily: {
-        'jos-sans': ['"Josefin Sans"', 'sans-serif'],
-        'jos-slab': ['Josefin Slab"', 'serif']
+        'header': ['"Bebas Neue"', 'sans-serif'],
+        'content': ['"Archivo Narrow"', 'serif']
       }
     },
   },

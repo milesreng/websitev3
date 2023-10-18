@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Other
+src/components/NavbarResponsive.jsx
+src/components/PlayingAnimation.jsx
+src/components/SpotifyAPI.jsx
+src/components/SpotifyLogo.jsx
+src/components/SpotifyNowPlaying.jsx
+.env

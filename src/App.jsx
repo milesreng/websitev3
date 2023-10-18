@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { 
   Route, 
   createBrowserRouter, 
@@ -9,9 +9,6 @@ import Home from './pages/Home'
 import Work from './pages/Work'
 import Coursework from './pages/Coursework'
 import Contact from './pages/Contact'
-import Resume from './components/Resume'
-
-import './App.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

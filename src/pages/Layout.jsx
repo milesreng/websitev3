@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Layout.css'
 import Navbar from '../components/NavBar'
+import NavbarResponsive from '../components/NavbarResponsive'
 
-class Layout extends Component {
-    render() {
-        return (
-            <div className="w-full h-full flex flex-col md:flex-row">
-                <Navbar />
-            </div>
-        )
-    }
+const Layout = () => {
+  return (
+    <div className='w-full h-full flex flex-col md:flex-row'>
+      <NavbarResponsive />
+    </div>
+  )
 }
- export default Layout
+export default Layout
