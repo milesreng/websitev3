@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div className='w-5/6 mx-auto'>
-      <h1 className='mx-auto text-3xl md:text-4xl uppercase text-gunmetal mt-4 md:mt-12'>Contact Me</h1>
+      <h1 className='mx-auto text-3xl md:text-4xl uppercase text-gunmetal mt-4 md:mt-12 font-header'>Contact Me</h1>
       <div className='w-11/12 mx-auto mt-8 border-2 border-white text-gunmetal-50  bg-gunmetal bg-opacity-80'>
         <div className='w-5/6 mx-auto py-8'>
           <form className='w-full flex flex-col gap-8' onSubmit={handleSubmit}>
@@ -75,7 +75,7 @@ const Contact = () => {
                 <textarea id='message' cols='30' rows='10' placeholder='Your message here...' onChange={handleMessage} value={message} className='block text-gunmetal-900 appearance-none border-2 border-gunmetal rounded w-full py-2 px-4 h-32 focus:ring-gunmetal-900 focus:border-gunmetal-900 bg-default-bg' ></textarea>
               </div>
             </div>
-            <button type='submit' className=' bg-gunmetal-800 rounded-md w-1/2 md:w-1/4 lg:w-1/6 text-md lg:text-xl mx-auto py-1 hover:bg-gunmetal-900 transition duration-200'>Submit</button>
+            <button type='submit' className=' bg-gunmetal-800 rounded-md w-1/2 md:w-1/4 lg:w-1/6 text-md lg:text-xl mx-auto py-1 hover:bg-gunmetal-900 transition duration-200 uppercase font-header'>Submit</button>
           </form>
         </div>
       </div>

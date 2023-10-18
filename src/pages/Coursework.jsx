@@ -5,7 +5,7 @@ const Coursework = () => {
   return (
     <div className='text-gunmetal flex flex-col min-h-screen gap-8 text-header'>
       <div className='text-center md:text-left pl-8 pt-2 md:pt-8'>
-        <h1 className='text-4xl md:text-5xl uppercase py-2'>Coursework</h1>
+        <h1 className='text-4xl md:text-5xl uppercase py-2 font-header'>Coursework</h1>
         <p className='text-xl'>Duke University</p>
         <p className='text-lg'>GPA: 3.95/4.0</p>
         <p className='text-md'>B.S. Computer Science, A.B.2 Global Health</p>
