@@ -4,7 +4,7 @@ import Modal from './Modal'
 
 const Course = (props) => {
   return (
-    <div className='flex flex-row  w-11/12 lg:w-5/12 mr-2 my-4 rounded-md bg-gunmetal transition-all duration-500'>
+    <div className={`flex flex-row w-11/12 md:w-full lg:w-1/2 mr-2 my-4 rounded-md bg-gunmetal transition-all duration-500 h-48 ${!props.isLeft ? 'md:-mr-4' : 'md:-ml-4'}`}>
       <div className='overflow-hidden w-1/2 h-full relative'>
         <img src={props.img} alt='' className='w-full h-full block top-0 left-0 object-cover rounded-l-md' />
       </div>

@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React from 'react'
 
 export default function Modal(props) {
-  const [showModal, setShowModal] = React.useState(false);
+  const [showModal, setShowModal] = React.useState(false)
+  
   return (
     <>
       <button
