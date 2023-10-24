@@ -80,6 +80,9 @@ const NavbarResponsive = () => {
             <Link to='/coursework'>
               <p className='text-gunmetal hover:font-bold'>Coursework</p>
             </Link>
+            <Link to='/portfolio'>
+              <p className='text-gunmetal hover:font-bold'>Projects + Skills</p>
+            </Link>
             <Link to='/contact'>
               <p className='text-gunmetal hover:font-bold'>Contact</p>
             </Link>

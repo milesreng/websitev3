@@ -1,0 +1,81 @@
+import React from 'react'
+import Project from '../components/Project'
+import Skill from '../components/Skill'
+import MiniSkill from '../components/MiniSkill'
+import AlbumADayImage from '../assets/albumaday.png'
+import TodoAppImage from '../assets/todoapp.png'
+
+const Portfolio = () => {
+  return (
+    <div className='md:px-auto'>
+      <div className=''>
+        <h1 className='text-4xl font-header tracking-wide md:pt-8 pb-4'>Skills</h1>
+        <div className='flex flex-wrap'>
+          <div className='basis-full md:basis-1/2 p-4'>
+            <div className='flex flex-wrap bg-bluegray-50 shadow-lg gap-6 justify-around p-4 rounded-md'>
+              <Skill lang='java' />
+              <Skill lang='javascript' />
+              <Skill lang='html5' />
+              <Skill lang='css3' />
+              <Skill lang='python' />
+              <Skill lang='c' />
+              <Skill lang='r' />
+            </div>
+          </div>
+          <div className='basis-full p-4 md:basis-1/2'>
+            <div className='flex flex-wrap p-4  bg-bluegray-50 shadow-lg gap-6 justify-around rounded-md'>
+              <Skill lang='react' />
+              <Skill lang='nodejs' />
+              <Skill lang='express' />
+              <Skill lang='mongodb' />
+              <Skill lang='postgresql' />
+              <Skill lang='git' />
+              <Skill lang='salesforce' />
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div>
+        <h1 className='text-4xl font-header tracking-wide md:pt-8 pb-4'>Projects</h1> 
+        <div className='flex flex-wrap'>
+          <Project 
+            title='Spotify' 
+            desc='A web app that allows users to search for artists and retrieve the artist&apos;s discography through the Spotify API.' 
+            link='https://albumaday.netlify.app'
+            img={AlbumADayImage}
+            languages={['react', 'nodejs', 'javascript']}
+            lightSkills={false} />
+          <Project 
+            title='To-Do List App' 
+            desc='A task management application that helps users organize their tasks.' 
+            link='https://react-todo-app-v3.netlify.app/'
+            img={TodoAppImage}
+            languages={['react', 'css3']}
+            lightSkills={false}
+          />
+
+          {/* <Project 
+            title='RecipeBook' 
+            desc='A recipe sharing platform where users can browse, upload, and rate recipes. Includes features for meal planning and grocery list generation.' 
+            link='https://recipebook-platform.com'
+            img='https://images.food52.com/t63vgy7FaQ3UqPDI37yP6frpzDc=/1200x1200/f3d3689f-7277-4957-a619-901b755567b9--Screen_Shot_2013-04-09_at_2.13.28_PM.png' 
+            languages={['java', 'python']}
+            lightSkills={true}
+          />
+
+          <Project 
+            title='Fitness Tracker' 
+            desc='A fitness app that tracks users’ workouts, provides exercise recommendations, and monitors progress. Integrated with wearable devices for real-time data.' 
+            link='https://fitnesstracker-app.netlify.app'
+            img='https://cdn.thewirecutter.com/wp-content/media/2023/06/fitnesstrackers-2048px-fitbitscreenshottriptych.jpg'
+            languages={['java', 'python']}
+            lightSkills={true}
+          /> */}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Portfolio
