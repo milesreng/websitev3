@@ -2,7 +2,7 @@ import React from 'react'
 import Project from '../components/Project'
 import Skill from '../components/Skill'
 import MiniSkill from '../components/MiniSkill'
-import AlbumADayImage from '../assets/albumaday.png'
+import StatifyImage from '../assets/wrapped.png'
 import TodoAppImage from '../assets/todoapp.png'
 
 const Portfolio = () => {
@@ -12,6 +12,7 @@ const Portfolio = () => {
         <h1 className='text-4xl font-header tracking-wide md:pt-8 pb-4'>Skills</h1>
         <div className='flex flex-wrap'>
           <div className='basis-full md:basis-1/2 p-4'>
+            <h1 className='pb-2 text-lg'>Languages</h1>
             <div className='flex flex-wrap bg-bluegray-50 shadow-lg gap-6 justify-around p-4 rounded-md'>
               <Skill lang='java' />
               <Skill lang='javascript' />
@@ -23,6 +24,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className='basis-full p-4 md:basis-1/2'>
+            <h1 className='pb-2 text-lg'>Technologies and Frameworks</h1>
             <div className='flex flex-wrap p-4  bg-bluegray-50 shadow-lg gap-6 justify-around rounded-md'>
               <Skill lang='react' />
               <Skill lang='nodejs' />
@@ -37,13 +39,13 @@ const Portfolio = () => {
         
       </div>
       <div>
-        <h1 className='text-4xl font-header tracking-wide md:pt-8 pb-4'>Projects</h1> 
+        <h1 className='text-4xl font-header tracking-wide pt-2 md:pt-8 pb-2'>Projects</h1> 
         <div className='flex flex-wrap'>
           <Project 
-            title='Spotify' 
-            desc='A web app that allows users to search for artists and retrieve the artist&apos;s discography through the Spotify API.' 
-            link='https://albumaday.netlify.app'
-            img={AlbumADayImage}
+            title='Statify for Spotify' 
+            desc='A web app that allows users to authenticate through the Spotify API and view a summary of their favorite tracks, artists, and genres.' 
+            link='https://statifyforspotify.netlify.app'
+            img={StatifyImage}
             languages={['react', 'nodejs', 'javascript']}
             lightSkills={false} />
           <Project 

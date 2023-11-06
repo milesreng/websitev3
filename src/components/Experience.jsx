@@ -56,7 +56,7 @@ export default function Experience() {
             </p>
           </div>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           className=''
           date=''
           contentStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}
@@ -74,14 +74,14 @@ export default function Experience() {
                 tasks from a list.
             </p>
           </div>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
         <VerticalTimelineElement
           className='vertical-timeline-element--work'
-          contentStyle={{ background: 'rgb(194, 199, 209)', color: '#2F323A' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(194, 199, 209)' }}
-          iconStyle={{ background: 'rgb(194, 199, 209)', color: '#2F323A' }}
+          contentStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(47, 50, 58)' }}
+          iconStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}
           date='August 2023'>
-          <div className='text-gunmetal'>
+          <div className=''>
             <h3 className='vertical-timeline-element-title'>Undergraduate Teaching Assistant</h3>
             <h4 className='vertical-timeline-element-subtitle'>Durham, NC</h4>
             <p> For the last three semesters, I have had the rewarding experience of
@@ -104,16 +104,18 @@ export default function Experience() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement    
-          className='vertical-timeline-element--work text-gunmetal-50 lg:text-gunmetal-900'
+          className='vertical-timeline-element--work'
           date='August 2021 - present'
-          contentStyle={{ background: 'rgb(47, 50, 58)' }}
-          iconStyle={{ background: 'rgb(47, 50, 58)', color: '#f7f7f5' }}>
-          <div className='text-gunmetal-50'>
+          contentStyle={{ background: 'rgb(194, 199, 209)' }}
+          iconStyle={{ background: 'rgb(194, 199, 209)', color: '#2F323A' }}>
+          <div className='text-gunmetal'>
             <h3 className='vertical-timeline-element-title'>B.S. Computer Science at Duke University</h3>
             <h4 className='vertical-timeline-element-subtitle'>Durham, NC</h4>
-            {/* <p>
-                        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                        </p> */}
+            <p>
+              <strong>GPA:</strong> 3.95<br />
+              <strong>Awards:</strong> Dean&apos;s List with Distinction - Fall 2021, Spring 2022, Fall 2022<br />
+              <strong>Extracurriculars:</strong> Partners in Health Engage, Association of Mixed People @ Duke
+            </p>
           </div>
         </VerticalTimelineElement>
         {/* <VerticalTimelineElement
@@ -130,9 +132,9 @@ export default function Experience() {
                         </p>
                     </div>
                 </VerticalTimelineElement> */}
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           iconStyle={{ background: 'rgb(47, 71, 74)', color: '#f7f7f5' }}
-        />
+        /> */}
       </VerticalTimeline>
     </div>
   )

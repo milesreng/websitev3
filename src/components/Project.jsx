@@ -19,7 +19,7 @@ const Project = (props) => {
               explore project
             </a>
           </div>
-          <div className={`flex flex-row gap-1 ${props.lightSkills ? 'bg-bluegray-200' : 'bg-bluegray-800'} ${props.languages.length > 2 ? 'w-1/2' : 'w-1/3'} justify-around rounded-full p-1 mb-2`}>
+          <div className={`flex flex-row gap-1 ${props.lightSkills ? 'bg-bluegray-200' : 'bg-gunmetal-900 opacity-80'} ${props.languages.length > 2 ? 'w-1/2' : 'w-1/3'} justify-around rounded-full p-1 mb-2`}>
             {props.languages.map(lang => (
               <MiniSkill key={lang} lang={lang} />
             ))}

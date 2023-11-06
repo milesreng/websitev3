@@ -12,8 +12,8 @@ const Home = () => {
         <div className='text-2xl sm:text-3xl md:text-2xl lg:text-4xl text-center lg:text-right mt-8 sm:mt-24 lg:mt-0 w-11/12 md:w-3/4 lg:pl-20 md:pr-8'>
           <h3 className='text-5xl'>Hi! I&apos;m Miles,</h3>
           <h3 className=''>
-           a junior 
-            at Duke University. I&apos;m passionate about <span className='font-bold'> leveraging technology </span>
+           a junior studying <span className='font-bold'> computer science </span> and <span className='font-bold'> global health </span>
+            at Duke University. I&apos;m passionate about leveraging technology
             to create a more equitable future.</h3>
         
         </div>

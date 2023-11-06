@@ -7,7 +7,7 @@ export default function Modal(props) {
   return (
     <>
       <button
-        className='bg-gunmetal-700 text-gunmetal-50 mt-1 active:bg-bluegray  text-sm rounded py-1 shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150 w-5/6 mx-auto'
+        className='bg-bluegray text-default-bg mt-1 hover:bg-bluegray-500  text-sm rounded py-1 shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150 w-5/6 mx-auto'
         type='button'
         onClick={() => setShowModal(true)}
       >{props.buttonlabel}
@@ -29,14 +29,14 @@ export default function Modal(props) {
                 </div>
                 {/*body*/}
                 <div className='relative p-6 flex-auto'>
-                  <p className='my-4 text-navy text-lg leading-relaxed'>
+                  <p className='my-4 text-navy text-lg leading-relaxed tracking-wide'>
                     {props.desc}
                   </p>
                 </div>
                 {/*footer*/}
                 <div className='flex items-center justify-end p-6 border-t border-solid border-gunmetal-500 rounded-b'>
                   <button
-                    className='text-gunmetal-900 bg-gunmetal-200 opacity-50 hover:bg-gunmetal-300 shadow hover:shadow-lg hover:font-bold uppercase rounded px-6 py-2 pt-3 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
+                    className='text-gunmetal-900 bg-gunmetal-50 opacity-50 hover:bg-gunmetal-100 shadow hover:shadow-lg hover:font-bold uppercase rounded px-6 py-1 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
                     type='button'
                     onClick={() => setShowModal(false)}
                   >
