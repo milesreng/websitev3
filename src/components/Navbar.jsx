@@ -46,7 +46,7 @@ class Navbar extends Component {
           </div>
                     
         </div>
-        <div className='md:pl-64 lg:pl-80 lg:pr-8 w-full pt-8 pl-8 text-center md:text-left'>
+        <div className='md:pl-64 lg:pl-80 lg:pr-8 w-full pt-8 pl-0 text-center md:text-left'>
           <Outlet />
         </div>
       </div>

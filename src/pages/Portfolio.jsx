@@ -1,9 +1,9 @@
 import React from 'react'
 import Project from '../components/Project'
 import Skill from '../components/Skill'
-import MiniSkill from '../components/MiniSkill'
 import StatifyImage from '../assets/wrapped.png'
 import TodoAppImage from '../assets/todoapp.png'
+import CaseStudy from '../assets/case-study-slide-deck.pdf'
 
 const Portfolio = () => {
   return (
@@ -42,20 +42,20 @@ const Portfolio = () => {
         <h1 className='text-4xl font-header tracking-wide pt-2 md:pt-8 pb-2'>Projects</h1> 
         <div className='flex flex-wrap'>
           <Project 
+            title='Rideshare Matching Algorithms Case Study' 
+            desc='A deep-dive into the algorithmic efficiency of passenger-to-driver matching on NYC app data.' 
+            link={CaseStudy}
+            img={TodoAppImage}
+            languages={['python', 'r']}
+            lightSkills={false}
+          />
+          <Project 
             title='Statify for Spotify' 
             desc='A web app that allows users to authenticate through the Spotify API and view a summary of their favorite tracks, artists, and genres.' 
             link='https://statifyforspotify.netlify.app'
             img={StatifyImage}
             languages={['react', 'nodejs', 'javascript']}
             lightSkills={false} />
-          <Project 
-            title='To-Do List App' 
-            desc='A task management application that helps users organize their tasks.' 
-            link='https://react-todo-app-v3.netlify.app/'
-            img={TodoAppImage}
-            languages={['react', 'css3']}
-            lightSkills={false}
-          />
 
           {/* <Project 
             title='RecipeBook' 
